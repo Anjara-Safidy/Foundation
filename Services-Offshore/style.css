@@ -1,0 +1,436 @@
+
+.top-bar {
+    background-color: #f0f0f0; 
+    padding: 1rem 0; 
+}
+
+/* Styles pour le bandeau supérieur */
+.pre-bar {
+    background-color: white; 
+    padding: 1px; 
+    font-size: 15px;; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    z-index: 10;
+}
+.contact-info {
+    color: #888; 
+    font-weight: bold;
+}
+.contact-info i {
+    color: #903; 
+    margin-right: 0.5rem;
+}
+
+
+.logo-zone {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.logo-img {
+    height: 55px; 
+    margin-bottom: 3px; 
+    display: block;
+}
+
+.marque {
+    text-align: center; 
+    margin: 0;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1; 
+    margin-top: 10px;
+}
+
+.marque-grey {
+    color: #555; 
+}
+
+.marque-red {
+    color: #903; 
+}
+
+
+.custom-menu > li:not(:last-child)::after {
+    content: "|";
+
+    padding-left: 10px; 
+    padding-right: 10px;
+    color: #ccc; /* Couleur gris clair pour le séparateur */
+    position: relative;
+    top: -1px;
+}
+
+
+.custom-menu a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #555454;
+    font-weight: 600;
+
+}
+/* --- Styles pour la Section HÉROS --- */
+
+.hero-image-section {
+  
+    min-height: 600px; 
+    display: flex; 
+    align-items: center; 
+ 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                      url('img/photo1.jpg'); 
+    background-size: cover;
+    background-position: center center;
+    color: white; 
+}
+
+/* Contenu du texte (pour un meilleur alignement dans la grille) */
+.hero-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Petit titre "Conseils gratuits..." */
+.hero-small-title {
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 30px;
+    justify-content: space-between;
+}
+
+
+.hero-small-title .small-line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #903; /* La couleur rouge/bordeaux */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Titre principal "Découvrez notre metiers" */
+.hero-main-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+/* Slogan */
+.hero-slogan-text {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+    max-width: 80%; /* Pour ne pas étirer le texte sur toute la largeur de la colonne */
+}
+
+/* Mots-clés ("RÉFÉRENCE") */
+.hero-keyword {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 15px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+/* --- Styles des Boutons --- */
+.button-group {
+    margin-top: 3rem;
+}
+
+/* Bouton "VOIR +" ) */
+.hero-button-voir {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-right: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.hero-button-voir:hover {
+    background-color: white;
+    color: #ffffff;
+}
+
+/* Bouton "CONTACTEZ-NOUS"  */
+.hero-button-contact {
+
+    color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+.hero-button-contact:hover {
+    background-color: #666; 
+    cursor: pointer;
+}
+
+/* --- Styles de la Section Services --- */
+
+.services-section {
+    padding: 6rem 0;
+    background-color: white; 
+}
+
+/* Titre principal et sous-titre */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #903; 
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.title-separator {
+    width: 40px;
+    height: 3px;
+    background-color: #903;
+    margin: 0 auto 3rem auto; 
+}
+
+
+.services-grid {
+    margin-top: 2rem;
+}
+
+ 
+.service-content {
+    display: flex; 
+    align-items: center; 
+    text-align: left;
+    margin-bottom: 40px; 
+}
+
+/* Icônes générales  */
+.service-icon {
+    flex-shrink: 0; 
+    width: 80px; 
+    height: 80px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px; 
+    font-size: 1.5rem;
+    color: #903; 
+    background-color: white;
+}
+
+/* Texte des services */
+.service-text {
+
+    align-self: flex-start;
+}
+
+.service-text h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.service-description {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+
+/* --- Styles de la Carte ACTIVE (Analyse des données) --- */
+
+.active-card {
+    background-color: white; 
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    padding: 30px; 
+    margin-top: -40px; 
+    margin-bottom: 40px;
+    display: flex; 
+    align-items: center;
+}
+
+.active-icon {
+    /* Style de l'icône active  */
+    background-color: #903; 
+    border-color: #903;
+    color: white;
+    width: 60px;
+    height: 60px;
+}
+
+.active-text {
+ 
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap; 
+}
+
+.active-title-inline {
+    color: #903; 
+    flex-shrink: 0;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.active-description-inline {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0; 
+}
+
+
+/* SECTION À PROPOS            */
+
+.about-section {
+    padding: 6rem 0;
+    background-color: white; 
+}
+
+/* Petit titre "A propos" */
+.about-small-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 20px;
+    display: inline-block;
+}
+.about-small-title .small-line-red {
+    display: block;
+    width: 15px;
+    height: 3px;
+    background-color: #903; 
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Grand titre "À propos de notre entreprise" */
+.about-main-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #903; 
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+/* Paragraphes de description */
+.about-paragraph {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+.about-paragraph strong {
+    font-weight: bold;
+}
+
+/* Styles de l'Image/Vidéo */
+.video-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px; 
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); 
+}
+.about-video-placeholder {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Bouton de Lecture */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background-color: #903; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+.play-button:hover {
+    opacity: 1;
+}
+
+
+/* SECTION EXPERTISE             */
+
+.expertise-section {
+    padding: 3rem 0; 
+    background-color: #581845; 
+    color: white; 
+    position: relative;
+    z-index: 1;
+}
+
+.expertise-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.expertise-list-dark {
+    list-style: none;
+    margin-left: 0;
+}
+
+.expertise-list-dark li {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* Style du Bouton "VOIR +" */
+.expertise-button {
+
+    
+    border: 2px solid white;
+    color: white;
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px; 
+  
+}
+
+.expertise-button:hover {
+    background-color: white;
+    color: #581845; 
+}
+.service-off{
+    margin-top: 50px;
+}
