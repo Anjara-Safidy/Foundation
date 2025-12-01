@@ -1,0 +1,115 @@
+:root {
+    --color-primary-blue: #234c89;
+    --color-secondary-blue: #007bff;
+    --color-text-dark: #333333;
+    --color-background-light: #f9f9f9;
+    --color-background-dark: var(--color-primary-blue);
+}
+body {
+    font-family: Arial, sans-serif;
+    color: var(--color-text-dark);
+}
+body, html {
+    overflow-x: hidden;
+}
+.content-section {
+    padding: 4rem 0;
+}
+.dark-bg {
+    background-color: var(--color-background-dark);
+    color: white;
+}
+.dark-bg h1, .dark-bg h2, .dark-bg h3 {
+    color: white;
+}
+.top-bar {
+    background: white;
+    padding: 0.5rem 0;
+    box-shadow: 0.2px 5px rgba(0, 0, 0, 0.1);
+}
+.top-bar .menu-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-primary-blue);
+}
+.top-bar .menu a {
+    color: var(--color-text-dark);
+    font-weight: 600;
+}
+.top-bar .menu a:hover {
+    cursor: pointer;
+    color: var(--color-secondary-blue);
+}
+.button .primary {
+    background-color: var(--color-primary-blue);
+    border-color: var(--color-primary-blue);
+    color: white;
+    padding: 0.5rem 1rem;
+}
+.hero-section {
+    background-image: url(Image/maq1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+.hero-overlay-box {
+    background-color: rgba(30, 70, 120, 0.9);
+    color: white;
+    padding: 3rem;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    @media screen and (max-width:39.9375em) {
+        padding: 1.5rem;
+    }
+}
+.hero-overlay-box h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: white;
+}
+@media screen and (max-width:39.9375em) {
+    .hero-section {
+        padding: 5rem 0;
+    }
+    .hero-overlay-box {
+        padding: 1.5rem;
+    }
+}
+.content-section img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.content-section .dark-bg .button .hollow .white {
+    color: white;
+    border-color: white;
+    background: transparent;
+}
+.footer {
+    background-color: var(--color-background-dark);
+    color: #cccccc;
+    padding: 3rem 0;
+}
+.footer h5 {
+    color: white;
+    margin-bottom: 1rem;
+}
+.footer a {
+    color: #dddddd;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: white;
+    cursor: pointer;
+}
+.footer .social-icons li a i {
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 0.5rem;
+}
